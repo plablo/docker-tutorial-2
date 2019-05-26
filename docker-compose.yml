@@ -25,7 +25,7 @@ services:
             - mysql
 
     mysql:
-        image: mysql:latest
+        build: ./mysql/
         volumes:
             - data:/var/lib/mysql
         networks:
